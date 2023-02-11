@@ -1,15 +1,15 @@
 .App {
     color: rgb(200, 0, 0);
-
 }
 
 .movie {
+    color: #082874;
     color: blue;
     padding: 2rem;
     margin: 2rem;
     border-style: solid;
 
-    &li { 
+    &li {
         color: red;
     }
 }

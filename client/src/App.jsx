@@ -1,44 +1,49 @@
-import './App.css'
+// @format
+import React from 'react';
+import './App.css';
 
 const movies = [
     {
-        title: "Star Wars",
-        genre: "Sci-fi",
-        length: "2hr 13mins",
+        title: 'Star Wars',
+        genre: 'Sci-fi',
+        length: '2hr 13mins',
     },
     {
-        title: "Rush Hour",
-        genre: "Comedy",
-        length: "1hr 30mins",
-    }
-]
+        title: 'Rush Hour',
+        genre: 'Comedy',
+        length: '1hr 30mins',
+    },
+];
 
 function DisplayMovies() {
-    console.log("display movies ran")
-    return(
-        movies.map(movie => {
-            console.log(movie)
+    console.log('display movies ran');
+    return (
+        movies.map((movie) => {
+            console.log(movie);
             return (
-                <div className="movie"> 
-                    <li className="title"> {movie.title} </li>
-                    <li > {movie.genre} </li>
-                    <li > {movie.length} </li>
+                <div className="movie">
+                    <li className="title">
+                        {movie.title}
+                    </li>
+                    <li>
+                        {movie.genre}
+                    </li>
+                    <li>
+                        {movie.length}
+                    </li>
                 </div>
-            )
+            );
         })
-    )
+    );
 }
-
-
 
 function App() {
-
     return (
         <div className="App">
-            <DisplayMovies/>
+            <DisplayMovies />
             <div>App </div>
         </div>
-    )
+    );
 }
 
-export default App
+export default App;
